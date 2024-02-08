@@ -71,22 +71,6 @@
 	text-decoration: none;
 	transition: ease-in-out 0.4s;
 }
-.IconActive {
-	position: relative;
-	transition: ease-in-out 1s;
-}
-.IconActive::after {
-	content: "";
-	width: 10px;
-	height: 10px;
-	position: absolute;
-	background: #2cb67d;
-	border-radius: 100%;
-	bottom: 0;
-	left: 50%;
-	right: 50%;
-	transform: translate(-50%);
-}
 
 .CapsuleContainer {
 	width: 100%;
