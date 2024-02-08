@@ -29,14 +29,17 @@ const Achievments = () => {
 							variants={{
 								hiddenL: {
 									opacity: 0,
-									translateX: 500,
+									visibility: "hidden",
+									translateX: 100,
 								},
 								hiddenR: {
 									opacity: 0,
-									translateX: -500,
+									visibility: "hidden",
+									translateX: -100,
 								},
 								animate: {
 									opacity: 1,
+									visibility: "visible",
 									translateX: 0,
 								},
 							}}

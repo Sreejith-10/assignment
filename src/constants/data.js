@@ -1,3 +1,27 @@
+export const user = {
+	name: "LEO JOY",
+	title: "Cyber Security Professional",
+	about:
+		"Dedicated Cyber Security Professional with a cumulative experience of 9.3 years in the field of Cyber Security. Conducted international conferences and spoke in 200+ stages on Cyber Security Awareness and gave 100+ practical sessions on Cyber Security Related topics.",
+	skills: {
+		softSkills: [
+			"Observation",
+			"Decision",
+			"Multi-tasking",
+			"Communication",
+			"making",
+		],
+		hardSkilks: [
+			"IT Recruitment",
+			"Vulnerability Assessment",
+			"Red and Blue Team Operations",
+			"Penetration Testing",
+			"Cyber Security Training",
+			"Cyber Security Strategy building",
+		],
+	},
+};
+
 export const workExperience = [
 	{
 		company: "Al Wafai International Company (WafaiCloud)",

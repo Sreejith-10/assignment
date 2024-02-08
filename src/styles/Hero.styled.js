@@ -22,10 +22,16 @@ const HeroBg = styled.div`
 const HeroTitle = styled.h1`
 	font-size: 4rem;
 	color: ${theme.Main};
+	@media (max-width: 600px) {
+		font-size: 2.5rem;
+	}
 `;
 const HeroDesc = styled.h3`
 	font-size: 3rem;
 	color: ${theme.Main};
+	@media (max-width: 600px) {
+		font-size: 1.5rem;
+	}
 `;
 
 export {HeroContainer, HeroBg, HeroTitle, HeroDesc};

@@ -11,6 +11,7 @@ import {
 } from "../styles/Skills.styled";
 import {motion} from "framer-motion";
 import "../Global.css";
+import {user} from "../constants/data";
 
 const Skills = () => {
 	return (
@@ -36,13 +37,11 @@ const Skills = () => {
 								transition={{duration: 0.5, delay: 0.5}}
 								viewport={{once: true}}
 								className="Skill">
-								<SkillTitle>Soft skills</SkillTitle>
+								<SkillTitle>Hard Skills</SkillTitle>
 								<SkillUl>
-									<SkillLi>Observation</SkillLi>
-									<SkillLi>Decision</SkillLi>
-									<SkillLi>Multi-tasking</SkillLi>
-									<SkillLi>Communication</SkillLi>
-									<SkillLi>making</SkillLi>
+									{user.skills.hardSkilks.map((item, id) => (
+										<SkillLi key={id}>{item}</SkillLi>
+									))}
 								</SkillUl>
 							</motion.div>
 							<motion.div
@@ -61,14 +60,11 @@ const Skills = () => {
 								transition={{duration: 0.5, delay: 0.5}}
 								viewport={{once: true}}
 								className="Skill">
-								<SkillTitle>Hard Skills</SkillTitle>
+								<SkillTitle>Soft Skills</SkillTitle>
 								<SkillUl>
-									<SkillLi>IT Recruitment</SkillLi>
-									<SkillLi>Vulnerability Assessment</SkillLi>
-									<SkillLi>Red and Blue Team Operations</SkillLi>
-									<SkillLi>Penetration Testing</SkillLi>
-									<SkillLi>Cyber Security Training</SkillLi>
-									<SkillLi>Cyber Security Strategy building</SkillLi>
+									{user.skills.softSkills.map((item, id) => (
+										<SkillLi key={id}>{item}</SkillLi>
+									))}
 								</SkillUl>
 							</motion.div>
 						</SkillItem>

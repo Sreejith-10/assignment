@@ -8,6 +8,9 @@ const ContactContainer = styled.div`
 	align-items: center;
 	justify-content: center;
 	background: ${theme.Secondary_bg};
+	@media (max-width: 600px) {
+		height: auto;
+	}
 `;
 const FormConatiner = styled.div`
 	width: 60%;

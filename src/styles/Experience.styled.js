@@ -26,7 +26,7 @@ const Card = styled.div`
 	align-items: start;
 	gap: 10px;
 	border: solid 2px ${theme.Highlight};
-	box-shadow: ${theme.Secondary_bg} 0px 2px 12px;
+	box-shadow: ${theme.Secondary_bg} 0px 2px 70px;
 	@media (max-width: 600px) {
 		width: 100%;
 	}

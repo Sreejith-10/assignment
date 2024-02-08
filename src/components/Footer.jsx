@@ -27,7 +27,7 @@ const Footer = () => {
 					<FaLinkedin size={30} />
 					<FaInstagram size={30} />
 				</FooterIcons>
-				<FooterCopyRight>2023 Developer. All rights reserved.</FooterCopyRight>
+				<FooterCopyRight>2024 Developer. All rights reserved.</FooterCopyRight>
 			</FooterWrapper>
 		</FooterContainer>
 	);

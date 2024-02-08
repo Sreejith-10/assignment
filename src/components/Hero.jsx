@@ -10,6 +10,7 @@ import {NavButton} from "../styles/Navbar.styled";
 import {motion} from "framer-motion";
 import "../J.css";
 import "../Global.css";
+import {user} from "../constants/data";
 
 const Hero = () => {
 	return (
@@ -43,12 +44,11 @@ const Hero = () => {
 							animate="animate"
 							transition={{ease: "easeIn", delay: ".2"}}
 							className="HeroF">
-							<div
-								className="heading">
+							<div className="heading">
 								<HeroTitle>Hello Iam,</HeroTitle>{" "}
-								<HeroTitle style={{color: "#7f5af0"}}>LEO JOY</HeroTitle>
+								<HeroTitle style={{color: "#7f5af0"}}>{user.name}</HeroTitle>
 							</div>
-							<HeroDesc>Cyber Security Professional</HeroDesc>
+							<HeroDesc>{user.title}</HeroDesc>
 						</motion.div>
 						<motion.div
 							variants={{

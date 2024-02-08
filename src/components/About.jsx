@@ -3,6 +3,7 @@ import {AboutContianer, AboutP, AboutSection} from "../styles/About.styled";
 import {Title} from "../styles/Common.styled";
 import {NavButton} from "../styles/Navbar.styled";
 import {motion} from "framer-motion";
+import {user} from "../constants/data";
 
 const About = () => {
 	return (
@@ -51,13 +52,7 @@ const About = () => {
 						transition={{duration: 0.5, delay: 0.5}}
 						viewport={{once: true}}
 						className="RightSide">
-						<AboutP>
-							Dedicated Cyber Security Professional with a cumulative experience
-							of 9.3 years in the field of Cyber Security. Conducted
-							international conferences and spoke in 200+ stages on Cyber
-							Security Awareness and gave 100+ practical sessions on Cyber
-							Security Related topics.
-						</AboutP>
+						<AboutP>{user.about}</AboutP>
 						<NavButton>Resume</NavButton>
 					</motion.div>
 				</AboutSection>
